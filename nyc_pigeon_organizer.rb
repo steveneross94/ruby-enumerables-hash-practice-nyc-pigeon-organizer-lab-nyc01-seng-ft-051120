@@ -8,7 +8,14 @@ def nyc_pigeon_organizer(data)
         if new_data[name] == nil
           new_data[name] = {}
         end
-      end
+
+        if new_data[name][key] == nil
+          new_data[name][key] = []
+        end
+
+        new_data[name][key] << new_value.tos
     end
   end
+end
+new_data
 end
